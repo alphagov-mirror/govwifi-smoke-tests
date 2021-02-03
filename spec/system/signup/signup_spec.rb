@@ -6,6 +6,7 @@ feature "Signup" do
 
   it "prints the env", :focus do
     pp ENV
+    pp File.read("properties/url")
   end
 
   it "signs up successfully" do
