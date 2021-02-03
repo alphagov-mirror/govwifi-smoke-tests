@@ -4,6 +4,10 @@ require_relative "../../../lib/eapol_test"
 feature "Signup" do
   include_context "signup"
 
+  it "prints the env", :focus do
+    pp ENV
+  end
+
   it "signs up successfully" do
     gmail = GoogleMail.new
 
